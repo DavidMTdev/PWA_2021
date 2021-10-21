@@ -1,5 +1,8 @@
 import React from 'react'
 import Router from './router'
+import { ThemeProvider } from "styled-components";
+
+import {DarkTheme} from './config/themes'
 
 // import './App.css'
 // import Header from './components/header'
@@ -9,7 +12,10 @@ import Router from './router'
 
 function App() {
     return (
-        <Router/>
+        <ThemeProvider theme={DarkTheme}>
+            <Router/>
+        </ThemeProvider>
+
         // <div className="App">
         //   {/* <Header label="Vive la France"/> */}
         //   {/* <Counter/> */}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
 const Header = () => {
-    const [showLink, setShowLink] = useState(true);
+    const [showLink, setShowLink] = useState(false);
 
     const menuBurger = () => {
         setShowLink(showLink => !showLink)
